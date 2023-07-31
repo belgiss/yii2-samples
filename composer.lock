@@ -4,8 +4,29 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a973addecfa2040a73918abda938727c",
+    "content-hash": "219a5926f21343562a674d9a4b5a4951",
     "packages": [
+        {
+            "name": "bower-asset/bootstrap",
+            "version": "v3.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twbs/bootstrap.git",
+                "reference": "68b0d231a13201eb14acd3dc84e51543d16e5f7e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/68b0d231a13201eb14acd3dc84e51543d16e5f7e",
+                "reference": "68b0d231a13201eb14acd3dc84e51543d16e5f7e"
+            },
+            "require": {
+                "bower-asset/jquery": ">=1.9.1,<4.0"
+            },
+            "type": "bower-asset",
+            "license": [
+                "MIT"
+            ]
+        },
         {
             "name": "bower-asset/inputmask",
             "version": "3.3.11",
@@ -39,6 +60,27 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/91ef2d8836342875f2519b5815197ea0f23613cf",
                 "reference": "91ef2d8836342875f2519b5815197ea0f23613cf"
+            },
+            "type": "bower-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "bower-asset/jstree",
+            "version": "3.3.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vakata/jstree.git",
+                "reference": "8c1bcc87771f5be0b70cd49d6a7888707ebcc64e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vakata/jstree/zipball/8c1bcc87771f5be0b70cd49d6a7888707ebcc64e",
+                "reference": "8c1bcc87771f5be0b70cd49d6a7888707ebcc64e"
+            },
+            "require": {
+                "bower-asset/jquery": ">=1.9.1"
             },
             "type": "bower-asset",
             "license": [
@@ -965,6 +1007,55 @@
             "time": "2020-10-23T09:01:57+00:00"
         },
         {
+            "name": "yii-dream-team/yii2-jstree",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yii-dream-team/yii2-jstree.git",
+                "reference": "42f46369fb504a2278b06ada6c120068a27f3460"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yii-dream-team/yii2-jstree/zipball/42f46369fb504a2278b06ada6c120068a27f3460",
+                "reference": "42f46369fb504a2278b06ada6c120068a27f3460",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/jstree": "~3",
+                "yiisoft/yii2": "~2"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "yiidreamteam\\jstree\\": "./src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alexey Samoylov",
+                    "email": "alexey.samoylov@gmail.com",
+                    "homepage": "http://yiiblog.ru",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Yii2 JsTree assets and widget",
+            "homepage": "http://yiidreamteam.com/yii2/jstree",
+            "keywords": [
+                "jstree",
+                "widget",
+                "yii2"
+            ],
+            "support": {
+                "issues": "https://github.com/yii-dream-team/yii2-jstree/issues",
+                "source": "https://github.com/yii-dream-team/yii2-jstree"
+            },
+            "time": "2015-01-06T20:04:57+00:00"
+        },
+        {
             "name": "yiisoft/yii2",
             "version": "2.0.48.1",
             "source": {
@@ -1085,6 +1176,100 @@
                 }
             ],
             "time": "2023-05-24T19:04:02+00:00"
+        },
+        {
+            "name": "yiisoft/yii2-bootstrap",
+            "version": "2.0.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yiisoft/yii2-bootstrap.git",
+                "reference": "83d144f4089adaa7064ad60dc4c1436daa2eb30e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/83d144f4089adaa7064ad60dc4c1436daa2eb30e",
+                "reference": "83d144f4089adaa7064ad60dc4c1436daa2eb30e",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/bootstrap": "3.4.* | 3.3.* | 3.2.* | 3.1.*",
+                "yiisoft/yii2": "~2.0.6"
+            },
+            "require-dev": {
+                "cweagans/composer-patches": "^1.7",
+                "phpunit/phpunit": "4.8.34"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                },
+                "patches": {
+                    "phpunit/phpunit-mock-objects": {
+                        "Fix PHP 7 and 8 compatibility": "https://yiisoft.github.io/phpunit-patches/phpunit_mock_objects.patch"
+                    },
+                    "phpunit/phpunit": {
+                        "Fix PHP 7 compatibility": "https://yiisoft.github.io/phpunit-patches/phpunit_php7.patch",
+                        "Fix PHP 8 compatibility": "https://yiisoft.github.io/phpunit-patches/phpunit_php8.patch"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "yii\\bootstrap\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Qiang Xue",
+                    "email": "qiang.xue@gmail.com",
+                    "homepage": "http://www.yiiframework.com/"
+                },
+                {
+                    "name": "Alexander Makarov",
+                    "email": "sam@rmcreative.ru",
+                    "homepage": "http://rmcreative.ru/"
+                },
+                {
+                    "name": "Antonio Ramirez",
+                    "email": "amigo.cobos@gmail.com"
+                },
+                {
+                    "name": "Paul Klimov",
+                    "email": "klimov.paul@gmail.com"
+                }
+            ],
+            "description": "The Twitter Bootstrap extension for the Yii framework",
+            "keywords": [
+                "bootstrap",
+                "yii2"
+            ],
+            "support": {
+                "forum": "http://www.yiiframework.com/forum/",
+                "irc": "irc://irc.freenode.net/yii",
+                "issues": "https://github.com/yiisoft/yii2-bootstrap/issues",
+                "source": "https://github.com/yiisoft/yii2-bootstrap",
+                "wiki": "http://www.yiiframework.com/wiki/"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/yiisoft",
+                    "type": "github"
+                },
+                {
+                    "url": "https://opencollective.com/yiisoft",
+                    "type": "open_collective"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/yiisoft/yii2-bootstrap",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-08-09T20:54:06+00:00"
         },
         {
             "name": "yiisoft/yii2-bootstrap4",
